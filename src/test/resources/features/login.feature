@@ -3,9 +3,10 @@ Feature: Login Feature
     As a User
     I Have to enter correct username  and Password
 
-  Scenario: Login to Automation practic page
+ Scenario: Login to AutomationFramework website with "valid" user
     Given User navigate to website URL
     When user validates the website title
     Then user enters username and Password
+      | username | password             |
+      | practice | SuperSecretPassword! |
     And user clicks on the submit button
-    And user confirm the loginpage image 

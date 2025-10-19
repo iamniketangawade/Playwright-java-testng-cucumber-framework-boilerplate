@@ -59,7 +59,7 @@ public class Playwright_webDriver {
 		browserContextThreadLocal.set(browserContext);
 
 		// Page
-		Page page = browser.newPage();
+		Page page = browserContext.newPage();
 		pageThreadLocal.set(page);
 	}
 
@@ -93,7 +93,7 @@ public class Playwright_webDriver {
 			Files.createDirectories(Paths.get(Screenshot_Capture));
 
 			String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-			String screenshotPath = Screenshot_Capture + testName + "_" + timestamp + ".png";
+			String screenshotPath = Screenshot_Capture + "\\" + testName + "_" + timestamp + ".png";
 
 			page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get(screenshotPath)).setFullPage(true));
 
@@ -114,6 +114,7 @@ public class Playwright_webDriver {
 
 			Browser.NewContextOptions contextOptions = new Browser.NewContextOptions().setViewportSize(null)
 					.setRecordVideoDir(Paths.get(Video_Capture)).setRecordVideoSize(1366, 768);
+			
 
 			BrowserContext browsercontext = browser.newContext(contextOptions);
 			System.out.println("🎥 ✅ Video recording started for test : " + testname);
