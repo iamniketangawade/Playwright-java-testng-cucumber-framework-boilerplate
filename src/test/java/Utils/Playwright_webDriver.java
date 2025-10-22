@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
@@ -36,6 +37,7 @@ public class Playwright_webDriver {
 					.setChannel("chrome").setArgs(java.util.Arrays.asList("--start-maximized")));
 			break;
 
+		case "msedge":	
 		case "edge":
 			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)
 					.setChannel("msedge").setArgs(java.util.Arrays.asList("--start-maximized")));
@@ -69,7 +71,7 @@ public class Playwright_webDriver {
 
 	}
 
-//Closing setup
+//Closing setup browser
 	public static void closeSetupBrowser() {
 		if (pageThreadLocal.get() != null) {
 			pageThreadLocal.get().close();
@@ -98,10 +100,16 @@ public class Playwright_webDriver {
 			page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get(screenshotPath)).setFullPage(true));
 
 			System.out.println("✅ Screenshot captured: " + screenshotPath);
+			
+			// ✅ Attach screenshot to Extent Report (works with Cucumber adapter)
+	        ExtentCucumberAdapter.addTestStepLog("📸 Screenshot captured for: " + testName);
+	        ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(screenshotPath);
+			
 			return screenshotPath;
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("❌ Failed to capture Screenshot: " + e.getMessage());
+	        ExtentCucumberAdapter.addTestStepLog("❌ Failed to capture Screenshot: " + e.getMessage());
 			return null;
 		}
 	}
@@ -114,7 +122,6 @@ public class Playwright_webDriver {
 
 			Browser.NewContextOptions contextOptions = new Browser.NewContextOptions().setViewportSize(null)
 					.setRecordVideoDir(Paths.get(Video_Capture)).setRecordVideoSize(1366, 768);
-			
 
 			BrowserContext browsercontext = browser.newContext(contextOptions);
 			System.out.println("🎥 ✅ Video recording started for test : " + testname);
@@ -130,16 +137,13 @@ public class Playwright_webDriver {
 
 	public static void saveVideo(BrowserContext browsercontext) {
 		try {
-			Path videoPath =browsercontext.pages().get(0).video().path();
+			Path videoPath = browsercontext.pages().get(0).video().path();
 			System.out.println("🎥 ✅ Video Saved at : " + videoPath.toAbsolutePath());
-			
-		}
-		catch (Exception e) {
+
+		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("🎥 ❌ Failed to save video: " + e.getMessage());
 		}
 	}
-	
-	
-	
+
 }
