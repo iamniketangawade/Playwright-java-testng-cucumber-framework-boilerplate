@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse--1563837946\testng-customsuite.xml</span>
+                    <span>C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse--1708733395\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,10 +135,8 @@
                   </a> <!-- runScenario("User selects a specific radio button", "Select specific radio button") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User selects a specific radio button","Select specific radio button")</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:20)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.navigate(String)&quot; because &quot;this.page&quot; is null
+	at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:19)
 	at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:7)
 
 </div> <!-- stack-trace -->
@@ -152,10 +150,8 @@
                   </a> <!-- runScenario("Login to AutomationFramework website with "valid" user", "Login Feature") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login to AutomationFramework website with "valid" user","Login Feature")</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:23)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.navigate(String)&quot; because &quot;this.page&quot; is null
+	at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:21)
 	at ✽.User navigate to website URL(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/login.feature:7)
 
 </div> <!-- stack-trace -->
@@ -168,7 +164,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse--1563837946\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse--1708733395\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -229,16 +225,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.testRunner')
-data.setCell(0, 3, 9384);
+data.setCell(0, 3, 222);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testRunner.testRunner')
-data.setCell(1, 3, 5680);
+data.setCell(1, 3, 23);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 245 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,24 +262,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunner.testRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@37e0292a)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@65eabaab)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("User selects a specific radio button", "Select specific radio button")</span>
-                <span class="method-start">670 ms</span>
+                <span class="method-start">710 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Login to AutomationFramework website with "valid" user", "Login Feature")</span>
-                <span class="method-start">10059 ms</span>
+                <span class="method-start">936 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">15743 ms</span>
+                <span class="method-start">963 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

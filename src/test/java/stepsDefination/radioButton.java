@@ -17,7 +17,6 @@ public class radioButton {
 	@Given("the user is on the radio button page")
 	public void user_navigate_to_website_url() {
 		page.navigate("https://practice.expandtesting.com/radio-buttons");
-		Assert.fail();
 	}
 
 	@When("the user selects the {string} option")

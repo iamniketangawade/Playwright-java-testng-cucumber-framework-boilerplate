@@ -10,7 +10,7 @@ public class Playwright_setupBrowser {
 	
 	// --------------Open a browser---------------------
 	@Before
-	public void setup() {
+	ublic void setup() {
 		String browser = System.getProperty("browser", "chrome");
 		Playwright_webDriver.OpenBrowserSetup(browser);
 
