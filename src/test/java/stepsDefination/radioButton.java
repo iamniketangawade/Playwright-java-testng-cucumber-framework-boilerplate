@@ -26,7 +26,7 @@ public class radioButton {
 	@Then("the {string} radio button should be selected")
 	public void select_radioOptionValidation(String radio_option) {
 		String color=radio_option;
-		boolean isChecked =page.locator("input[type='radio'][value='" + color + "']").isChecked();
+		boolean isChecked =page.locator("input[type=''][value='" + color + "']").isChecked();
 		System.out.println("Radio button :"+ color +" is selected:"+isChecked );
 	}
 }
