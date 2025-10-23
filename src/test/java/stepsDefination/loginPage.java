@@ -3,6 +3,8 @@ package stepsDefination;
 import java.util.List;
 import java.util.Map;
 
+import org.testng.Assert;
+
 import com.microsoft.playwright.Page;
 import Utils.Playwright_webDriver;
 import io.cucumber.datatable.DataTable;
@@ -18,6 +20,7 @@ public class loginPage extends Playwright_webDriver{
 	@Given("User navigate to website URL")
 	public void user_navigate_to_website_url() {
 		page.navigate("https://practice.expandtesting.com/login");
+		Assert.fail();
 	}
 
 	@When("user validates the website title")

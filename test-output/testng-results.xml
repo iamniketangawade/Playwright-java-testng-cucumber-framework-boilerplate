@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-23T13:07:12 IST" name="Default suite" finished-at="2025-10-23T13:08:02 IST" duration-ms="49644">
+  <suite started-at="2025-10-23T13:11:40 IST" name="Default suite" finished-at="2025-10-23T13:11:55 IST" duration-ms="15840">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-23T13:07:12 IST" name="Default test" finished-at="2025-10-23T13:08:02 IST" duration-ms="49644">
+    <test started-at="2025-10-23T13:11:40 IST" name="Default test" finished-at="2025-10-23T13:11:55 IST" duration-ms="15840">
       <class name="testRunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:07:12 IST" name="setUpClass" finished-at="2025-10-23T13:07:13 IST" duration-ms="780" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:11:40 IST" name="setUpClass" finished-at="2025-10-23T13:11:40 IST" duration-ms="660" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6944e53e]]>
+                <![CDATA[org.testng.TestRunner@37e0292a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:07:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T13:07:53 IST" duration-ms="39622" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:11:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T13:11:50 IST" duration-ms="9384" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,64 +34,23 @@
               </value>
             </param>
           </params>
-          <exception class="com.microsoft.playwright.TimeoutError">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator("input[type=''][value='black']")
-]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator("input[type=''][value='black']")
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-at com.microsoft.playwright.impl.FrameImpl.isCheckedImpl(FrameImpl.java:512)
-at com.microsoft.playwright.impl.FrameImpl.isChecked(FrameImpl.java:503)
-at com.microsoft.playwright.impl.LocatorImpl.isChecked(LocatorImpl.java:386)
-at com.microsoft.playwright.Locator.isChecked(Locator.java:3949)
-at stepsDefination.radioButton.select_radioOptionValidation(radioButton.java:29)
-at ✽.the "black" radio button should be selected(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:9)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator("input[type=''][value='black']")
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-... 8 more
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:20)
+at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:7)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:07:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T13:08:02 IST" duration-ms="9129" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T13:11:55 IST" duration-ms="5680" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -104,10 +63,23 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:23)
+at ✽.User navigate to website URL(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/login.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:08:02 IST" name="tearDownClass" finished-at="2025-10-23T13:08:02 IST" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:11:55 IST" name="tearDownClass" finished-at="2025-10-23T13:11:55 IST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

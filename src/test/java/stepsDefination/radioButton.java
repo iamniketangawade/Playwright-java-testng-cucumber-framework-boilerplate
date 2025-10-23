@@ -1,5 +1,7 @@
 package stepsDefination;
 
+import org.testng.Assert;
+
 import com.microsoft.playwright.Page;
 
 import Utils.Playwright_webDriver;
@@ -11,10 +13,11 @@ public class radioButton {
 	//Feature file : Radio button selection
 	Page page = Playwright_webDriver.getPage();
 
-	//Given
+
 	@Given("the user is on the radio button page")
 	public void user_navigate_to_website_url() {
 		page.navigate("https://practice.expandtesting.com/radio-buttons");
+		Assert.fail();
 	}
 
 	@When("the user selects the {string} option")
@@ -26,7 +29,7 @@ public class radioButton {
 	@Then("the {string} radio button should be selected")
 	public void select_radioOptionValidation(String radio_option) {
 		String color=radio_option;
-		boolean isChecked =page.locator("input[type=''][value='" + color + "']").isChecked();
+		boolean isChecked =page.locator("input[type='radio'][value='" + color + "']").isChecked();
 		System.out.println("Radio button :"+ color +" is selected:"+isChecked );
 	}
 }

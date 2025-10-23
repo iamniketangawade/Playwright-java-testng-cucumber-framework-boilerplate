@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 23 13:07:12 IST 2025</td>
+<td>Started on:</td><td>Thu Oct 23 13:11:40 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49644 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15840 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,95 +77,35 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User selects a specific radio button", "Select specific radio button"</td>
-<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator(&quot;input[type=&apos;&apos;][value=&apos;black&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.isCheckedImpl(FrameImpl.java:512)
-	at com.microsoft.playwright.impl.FrameImpl.isChecked(FrameImpl.java:503)
-	at com.microsoft.playwright.impl.LocatorImpl.isChecked(LocatorImpl.java:386)
-	at com.microsoft.playwright.Locator.isChecked(Locator.java:3949)
-	at stepsDefination.radioButton.select_radioOptionValidation(radioButton.java:29)
-	at ✽.the &quot;black&quot; radio button should be selected(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:9)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator(&quot;input[type=&apos;&apos;][value=&apos;black&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 8 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace337039263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace337039263'><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator(&quot;input[type=&apos;&apos;][value=&apos;black&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.isCheckedImpl(FrameImpl.java:512)
-	at com.microsoft.playwright.impl.FrameImpl.isChecked(FrameImpl.java:503)
-	at com.microsoft.playwright.impl.LocatorImpl.isChecked(LocatorImpl.java:386)
-	at com.microsoft.playwright.Locator.isChecked(Locator.java:3949)
-	at stepsDefination.radioButton.select_radioOptionValidation(radioButton.java:29)
-	at ✽.the &quot;black&quot; radio button should be selected(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:9)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\progress.js:65:26)
-    at FrameDispatcher._runCommand (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\NIKETA~1\AppData\Local\Temp\playwright-java-17866208745027469184\package\lib\server\dispatchers\dispatcher.js:322:39)
-}
-Call log:
--   - waiting for locator(&quot;input[type=&apos;&apos;][value=&apos;black&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 8 more
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:20)
+	at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1565614310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1565614310'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:20)
+	at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:7)
 </pre></div></td>
-<td>39</td>
+<td>9</td>
 <td>testRunner.testRunner@19932c16</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
 <tr>
 <td title='testRunner.testRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to AutomationFramework website with "valid" user", "Login Feature"</td>
-<td></td>
-<td>9</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:23)
+	at ✽.User navigate to website URL(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/login.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace60187547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace60187547'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:23)
+	at ✽.User navigate to website URL(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/login.feature:7)
+</pre></div></td>
+<td>5</td>
 <td>testRunner.testRunner@19932c16</td></tr>
 </table><p>
 </body>
