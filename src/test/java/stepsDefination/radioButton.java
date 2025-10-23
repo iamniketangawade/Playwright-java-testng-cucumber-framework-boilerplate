@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class radioButton {
-
+	//Feature file : Radio button selection
 	Page page = Playwright_webDriver.getPage();
 
 	@Given("the user is on the radio button page")
