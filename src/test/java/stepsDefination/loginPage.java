@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class loginPage extends Playwright_webDriver{
-	//Feature file Integration
+	//Feature file Integrations
 	Page page = Playwright_webDriver.getPage();
 	
 	//Feature file Integration

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-23T13:15:29 IST" name="Default suite" finished-at="2025-10-23T13:15:30 IST" duration-ms="1065">
+  <suite started-at="2025-10-23T14:33:46 IST" name="Default suite" finished-at="2025-10-23T14:34:05 IST" duration-ms="19255">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-23T13:15:29 IST" name="Default test" finished-at="2025-10-23T13:15:30 IST" duration-ms="1065">
+    <test started-at="2025-10-23T14:33:46 IST" name="Default test" finished-at="2025-10-23T14:34:05 IST" duration-ms="19255">
       <class name="testRunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:15:29 IST" name="setUpClass" finished-at="2025-10-23T13:15:30 IST" duration-ms="701" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T14:33:46 IST" name="setUpClass" finished-at="2025-10-23T14:33:46 IST" duration-ms="729" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@65eabaab]]>
+                <![CDATA[org.testng.TestRunner@2b2f5fcf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:15:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T13:15:30 IST" duration-ms="222" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T14:33:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T14:33:56 IST" duration-ms="9639" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,21 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.microsoft.playwright.Page.navigate(String)" because "this.page" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.microsoft.playwright.Page.navigate(String)" because "this.page" is null
-at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:19)
-at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:15:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T13:15:30 IST" duration-ms="23" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T14:33:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-23T14:34:05 IST" duration-ms="8733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,21 +50,10 @@ at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/ec
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.microsoft.playwright.Page.navigate(String)" because "this.page" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.microsoft.playwright.Page.navigate(String)" because "this.page" is null
-at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:21)
-at ✽.User navigate to website URL(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/login.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T13:15:30 IST" name="tearDownClass" finished-at="2025-10-23T13:15:30 IST" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@19932c16]" started-at="2025-10-23T14:34:05 IST" name="tearDownClass" finished-at="2025-10-23T14:34:05 IST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

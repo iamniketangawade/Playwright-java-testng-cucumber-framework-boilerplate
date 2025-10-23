@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse--1708733395\testng-customsuite.xml</span>
+                    <span>C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse-1292218772\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User selects a specific radio button&quot;, &quot;Select specific radio button&quot;)">runScenario("User selects a specific radio button", "Select specific radio button")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testRunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to AutomationFramework website with &quot;valid&quot; user&quot;, &quot;Login Feature&quot;)">runScenario("Login to AutomationFramework website with "valid" user", "Login Feature")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testRunner.testRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,11 +135,6 @@
                   </a> <!-- runScenario("User selects a specific radio button", "Select specific radio button") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User selects a specific radio button","Select specific radio button")</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.navigate(String)&quot; because &quot;this.page&quot; is null
-	at stepsDefination.radioButton.user_navigate_to_website_url(radioButton.java:19)
-	at ✽.the user is on the radio button page(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/RadioButton.feature:7)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -150,21 +145,16 @@
                   </a> <!-- runScenario("Login to AutomationFramework website with "valid" user", "Login Feature") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login to AutomationFramework website with "valid" user","Login Feature")</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.microsoft.playwright.Page.navigate(String)&quot; because &quot;this.page&quot; is null
-	at stepsDefination.loginPage.user_navigate_to_website_url(loginPage.java:21)
-	at ✽.User navigate to website URL(file:///C:/Users/Niketan%20Gawade/eclipse-workspace/Playwright-java-testng-cucumber-framework-boilerplate/src/test/resources/features/login.feature:7)
-
-</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse--1708733395\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Niketan Gawade\AppData\Local\Temp\testng-eclipse-1292218772\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,16 +215,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.testRunner')
-data.setCell(0, 3, 222);
+data.setCell(0, 3, 9639);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testRunner.testRunner')
-data.setCell(1, 3, 23);
+data.setCell(1, 3, 8733);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 245 ms</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,24 +252,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunner.testRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@65eabaab)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@2b2f5fcf)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("User selects a specific radio button", "Select specific radio button")</span>
-                <span class="method-start">710 ms</span>
+                <span class="method-start">742 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Login to AutomationFramework website with "valid" user", "Login Feature")</span>
-                <span class="method-start">936 ms</span>
+                <span class="method-start">10386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">963 ms</span>
+                <span class="method-start">19129 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

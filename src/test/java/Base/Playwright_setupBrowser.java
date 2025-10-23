@@ -15,7 +15,6 @@ public class Playwright_setupBrowser {
 		Playwright_webDriver.OpenBrowserSetup(browser);
 
 	}
-
 	// --------------Close a browser---------------------
 	@After
 	public void tearDown(Scenario scenario) {
