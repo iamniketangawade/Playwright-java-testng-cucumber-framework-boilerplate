@@ -11,3 +11,5 @@ Feature: Select specific radio button
     Examples:
       | radio_option |
       | black        |
+      | blue |
+      | red        |

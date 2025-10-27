@@ -3,6 +3,7 @@ package stepsDefination;
 import java.util.List;
 import java.util.Map;
 
+import org.testng.Reporter;
 
 import com.microsoft.playwright.Page;
 import Utils.Playwright_webDriver;
@@ -40,6 +41,7 @@ public class loginPage extends Playwright_webDriver{
 	@Then("user clicks on the submit button")
 	public void user_clicks_on_the_submit_button() {
 		page.click("//button[@id=\"submit-login\"]");
+		Reporter.log("clickable");
 }
 	
 }

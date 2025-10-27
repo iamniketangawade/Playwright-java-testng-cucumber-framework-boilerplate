@@ -1,5 +1,7 @@
 package testRunner;
 
+
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -11,9 +13,10 @@ import io.cucumber.testng.CucumberOptions;
 				"pretty",
 		        "html:target/cucumber-reports/cucu-html-report.html",
 		        "json:target/cucumber.json",
-		        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"	
+		        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",	
 		}
+	
 		)
 public class testRunner extends AbstractTestNGCucumberTests {
-	
+
 }

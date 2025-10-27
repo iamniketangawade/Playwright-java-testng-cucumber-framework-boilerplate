@@ -43,12 +43,25 @@
 <!--********** Grasshopper extent report end*********** -->	
 
 
-<!-- Allure Cucumber Plugin -->
+
+<!--********** reportNG & google start*********** -->	
+
+<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
 <dependency>
-    <groupId>io.qameta.allure</groupId>
-    <artifactId>allure-cucumber7-jvm</artifactId>
-    <version>2.29.0</version>
+    <groupId>org.uncommons</groupId>
+    <artifactId>reportng</artifactId>
+    <version>1.1.4</version>
+    <scope>test</scope>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+<dependency>
+    <groupId>com.google.inject</groupId>
+    <artifactId>guice</artifactId>
+    <version>7.0.0</version>
+</dependency>
+<!--********** reportNG end*********** -->	
+
   </dependencies>
   
   
